@@ -31,3 +31,46 @@ function InsertData(con) {
     });
 }
 ```
+## Delete Data
+```
+function DeleteData(con) {
+      let SQLQuery="DELETE FROM `students_list` WHERE  `id`='1'"
+    con.query(SQLQuery, function (error) {
+        if (error) {
+            console.log("Data delete Fail")
+        }
+        else {
+            console.log("Data delete Success");
+        }
+    });
+}
+```
+
+## UpdateData Data
+```
+function UpdateData(con) {
+      let SQLQuery="UPDATE `students_list` SET `name`='Moheuddin Monna', `phone`='019999999',`city`='Cumilla' WHERE `id`= '3' "
+    con.query(SQLQuery, function (error) {
+        if (error) {
+            console.log("Update Data Fail")
+        }
+        else {
+            console.log("Update Data Success");
+        }
+    });
+}
+```
+## Select Data
+```
+function SelectData(con) {
+      let SQLQuery="SELECT * FROM `students_list`  "
+    con.query(SQLQuery, function (error, result) {
+        if (error) {
+            console.log("SELECT Data Fail")
+        }
+        else {
+            console.log(result);
+        }
+    });
+}
+```
