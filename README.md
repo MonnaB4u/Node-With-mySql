@@ -17,7 +17,7 @@ con.connect(function (error) {
     }
 });
 ```
-##Insert Data
+## Insert Data
 ```
 function InsertData(con) {
       let SQLQuery="INSERT INTO `students_list`(`name`, `roll`, `class`, `phone`, `city`) VALUES ('Monna','03','CS','016','Dhaka')"
