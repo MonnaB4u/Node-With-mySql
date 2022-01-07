@@ -13,9 +13,7 @@ con.connect(function (error) {
     }
     else{
         console.log("Connection Success");
-        //InsertData(con);
-        //DeleteDataByID(con)
-       //UpdateData(con);
+       
     }
 });
 ```
